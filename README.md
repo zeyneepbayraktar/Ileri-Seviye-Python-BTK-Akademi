@@ -1,4 +1,4 @@
-# Python İleri Seviye - Fonksiyonel Yapılar ve List Comprehension
+# Python İleri Seviye
 
 BTK Akademinin İleri Seviye Python eğitimini izlerken tuttuğum notlardan derlenmiş, açıklamalar ve alıştırılabilir örnekler. Her dosya tek bir konuya odaklanır, yorum satırları ile açıklanmıştır ve baştan sona çalıştırıldığında ilgili örneklerin çıktısını terminalde görebilirsiniz.
 
