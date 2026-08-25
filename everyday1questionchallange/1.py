@@ -1,3 +1,10 @@
+# ============================================================
+# GÜNLÜK SORU CHALLENGE
+# Bu dosya her gün çözülmesi planlanan Python sorularının kısa örnek
+# çözümlerini içerir. Konu listesi, örnek kod blokları ve pratik alıştırma
+# fikirleri içerdiği için çalışma notu olarak kullanılabilir.
+# ============================================================
+
 # 1. Hello World! - adettendir
 #print("hello world!")
 
@@ -57,14 +64,82 @@
 # 4. OOP — 10 gün
 
 # * Day 12: Student class’ı oluştur, name ve age tut.
+# class Student:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+# a = Student("ayse", 18)
+# print(a.name, a.age)
+    
 # * Day 13: Student içine introduce() methodu ekle.
+# class Student:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#     def introduce(self):
+#         return f"Ad:{self.name} Yas:{self.age}"
+# a = Student("ayse", 18)
+# print(a.introduce())
+
 # * Day 14: Car class’ı oluştur, marka ve model bilgisi alsın.
+# class Car:
+#     def __init__(self, marka, model):
+#         self.marka = marka
+#         self.model = model
+# class CarAl:
+#     def __init__(self):
+#         self.liste = []
+#     def kullanicidanAl(self):
+#         marka = input("Marka bilgisi:" )
+#         model = input("Model Bilgisi: ")
+#         yeniListe = Car(marka, model)
+#         self.liste.append(yeniListe)
+#         print(self.liste)
+#     def view(self):
+#         for i in self.liste:
+#             print(f"{i.marka} {i.model}")
+# car = CarAl()
+# car.kullanicidanAl()
+# car.view()
+
 # * Day 15: Car içine drive() methodu ekle.
+# class Car:
+#     def __init__(self, marka, model):
+#         self.marka = marka
+#         self.model = model
+#         self.km = 0
+#     def drive(self):
+#         self.km += 1
+#         print(self.km)
+# class CarAl:
+#     def __init__(self):
+#         self.liste = []
+#     def kullanicidanAl(self):
+#         marka = input("Marka bilgisi:" )
+#         model = input("Model Bilgisi: ")
+#         yeniListe = Car(marka, model)
+#         self.liste.append(yeniListe)
+#         print(self.liste)
+#     def view(self):
+#         for i in self.liste:
+#             print(f"{i.marka} {i.model}")
+# car = CarAl()
+# car.kullanicidanAl()
+# car.view()
+# car.liste[0].drive()
+# car.liste[0].drive()
+# car.liste[0].drive()
+
 # * Day 16: Book class’ı oluştur ve 2 farklı kitap objesi yarat.
+
 # * Day 17: Bir class’a class attribute ekle.
+
 # * Day 18: Bir class’a private attribute eklemeyi dene.
+
 # * Day 19: Animal → Dog inheritance yapısını kur.
+
 # * Day 20: Animal içinde speak(), Dog içinde override edilmiş speak() yaz.
+
 # * Day 21: BankAccount class’ı oluştur: deposit() ve withdraw() ekle.
 
 # 5. Iterators & Generators — 4 gün
