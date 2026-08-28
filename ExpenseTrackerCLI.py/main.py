@@ -7,11 +7,12 @@
 
 from datetime import date as dt
 class Expense:
-    def __init__(self, id, description, amount, date):
+    def __init__(self, id, description, amount, date, category):
         self.id= id
         self.description = description
         self.amount = amount
         self.date = date 
+        self.category = category
 
 class ExpenseTracker:
     def __init__(self):
@@ -20,16 +21,17 @@ class ExpenseTracker:
     def add(self):
         description = input("Write the description: ")
         amount = input("Write amount: ")
+        category = input("Write category: ")
         try:
             amount = int(amount)
         except ValueError:
             print("Sayı giriniz!")
             return
-        print(description, amount)
+        print(description, amount, category)
         new_id = len(self.expenses) + 1
         print(new_id)
         date = str(dt.today())
-        new_expense = Expense(new_id, description, amount, date)
+        new_expense = Expense(new_id, description, amount, date, category)
         self.expenses.append(new_expense)
         print(self.expenses)
 
@@ -39,6 +41,7 @@ class ExpenseTracker:
             delete_id = int(delete_id)
         except ValueError:
             print("Sayı giriniz!")
+            return
         print(delete_id)
         self.expenses = [i for i in self.expenses if i.id != delete_id]
 
@@ -48,6 +51,7 @@ class ExpenseTracker:
             update_id =int(update_id)
         except ValueError:
             print("Sayı giriniz!")
+            return
         print(update_id)
         for i in self.expenses:
             if i.id ==update_id:
@@ -56,10 +60,9 @@ class ExpenseTracker:
                 i.description = yeni_description
                 i.amount = int(yeni_amount)
             
-
     def view(self):
         for i in self.expenses:
-            print(f"{i.id} {i.date} {i.description} {i.amount}")
+            print(f"{i.id} {i.date} {i.description} {i.amount} {i.category}")
 
     def summary(self):
         print(sum(int(i.amount) for i in self.expenses))
@@ -68,10 +71,15 @@ class ExpenseTracker:
         month = input("Which month? (1-12): ")
         print(sum(int(i.amount) for i in self.expenses if int(i.date.split("-")[1]) == int(month)))
 
+    def viewByCategory(self):
+        category1 = input("Which category: ")
+        for i in self.expenses:
+            if category1 == i.category:
+                print(f"{i.id} {i.date} {i.description} {i.amount} {i.category}")
 
 tracker = ExpenseTracker()
 while True:
-    cevap = input("What you want to do(1. Add, 2. View, 3. Delete, 4. Update, 5. Summary, 6.Summary of the Month, 7. Exit): ")
+    cevap = input("What you want to do(1. Add, 2. View, 3. Delete, 4. Update, 5. Summary, 6.Summary of the Month, 7.viewByCategory, 8. Exit): ")
     try:
         cevap = int(cevap)
     except ValueError:
@@ -90,6 +98,8 @@ while True:
     elif cevap == 6:
         tracker.summaryOfTheMonth()
     elif cevap == 7:
+        tracker.viewByCategory()
+    elif cevap == 8:
         break  
     else:
         print("Geçersiz seçim")

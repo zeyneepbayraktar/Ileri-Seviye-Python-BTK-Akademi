@@ -131,10 +131,44 @@
 # car.liste[0].drive()
 
 # * Day 16: Book class’ı oluştur ve 2 farklı kitap objesi yarat.
+# class Book:
+#     def __init__(self, writer, name, page):
+#         self.writer = writer
+#         self.name = name
+#         self.page = page
+
+# b = Book("matt haig", "hayat imkansiz", 300)
+# print(b.writer, b.name, b.page)
+# b1 = Book("a", "b", 200)
+# print(b1.writer, b1.name, b1.page)
 
 # * Day 17: Bir class’a class attribute ekle.
+# class Book:
+#     discount = 0.8
+#     def __init__(self, writer, name, page, price):
+#         self.writer = writer
+#         self.name = name
+#         self.page = page
+#         self.price = price
+#     def discounted_price(self):
+#         return self.price * Book.discount
+
+# b = Book("matt haig", "hayat imkansiz", 300, 400)
+# print(b.writer, b.name, b.page)
+# print(b.discounted_price())
 
 # * Day 18: Bir class’a private attribute eklemeyi dene.
+# class Book:
+#     def __init__(self, writer, name, page, book_id):
+#         self.writer = writer
+#         self.name = name
+#         self.page = page
+#         self.__id = book_id
+#     def get_id(self):
+#         return self.__id
+
+# b = Book("matt haig", "hayat imkansiz", 300, 58)
+# print(b.writer, b.name, b.page, b.get_id())
 
 # * Day 19: Animal → Dog inheritance yapısını kur.
 

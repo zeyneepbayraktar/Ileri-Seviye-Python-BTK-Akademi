@@ -53,6 +53,14 @@ BTK Akademinin ileri seviye Python eğitiminde izlenen konular, örnekler ve pra
 | [ExpenseTrackerCLI.py/main.py](ExpenseTrackerCLI.py/main.py) | Harcama takip CLI uygulaması |
 | [everyday1questionchallange/1.py](everyday1questionchallange/1.py) | Günlük soru challenge listesi ve örnek çözümler |
 
+### 7. İleri düzey fonksiyonlar ve decorator
+
+| Dosya | Konu |
+|---|---|
+| [ileriDuzeyFonksiyonlar.py](ileriDuzeyFonksiyonlar.py) | İç içe fonksiyonlar, fonksiyondan fonksiyon döndürme ve fonksiyonları parametre olarak kullanma |
+| [decoratorFonksiyonlar.py](decoratorFonksiyonlar.py) | Decorator mantığı, parametreli decorator ve performans ölçüm örnekleri |
+| [decorator_uygulama.py](decorator_uygulama.py) | Speed test decorator uygulaması |
+
 ## Çalıştırma
 
 Python 3 kurulu olması yeterlidir. Ek bağımlılık gerekmez.
@@ -72,6 +80,7 @@ python3 ExpenseTrackerCLI.py/main.py
 - Class, instance, inheritance, property ve special methods
 - Iterable, iterator ve generator yapısı
 - Bellek verimliliği ve çıktının karşılaştırılması
+- İleri düzey fonksiyonlar ve decorator kullanımı
 - Kendi mini uygulama ve CLI tasarımı
 
 ## Not

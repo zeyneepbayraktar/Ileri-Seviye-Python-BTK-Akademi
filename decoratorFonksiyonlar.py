@@ -1,0 +1,100 @@
+# ============================================================
+# DECORATOR FONKSIYONLAR
+# Bu dosya decorator kavramını, parametre alan decorator yapısını ve
+# fonksiyon çalışma süresi ölçümünü örnekler üzerinden gösterir.
+# Kod örnekleri yorum satırlarında adım adım bırakılmıştır.
+# ============================================================
+
+# def selamlama(fn):
+#     def inner(ad):
+#         print("Hosgeldiniz")
+#         fn(ad)
+#         print("Gorusuruz")
+#     return inner
+
+# @selamlama
+# def gunaydin(ad):
+#     print(f"Gunaydin benim adim {ad}")
+
+# @selamlama
+# def iyigunler(ad):
+#     print(f"Iyi gunler benim adim {ad}")
+
+# gunaydin("Zeynep")
+# iyigunler("Zeynep")
+
+# Decorator Parametreleri
+
+# def double(fn):
+#     def inner(*args, **kwargs):
+#         fn(*args, *kwargs)
+#         return fn(*args, *kwargs)
+#     return inner
+
+# @double
+# def gunaydin():
+#     print("gunaydin")
+
+# @double
+# def selam(isim):
+#     print("selam", isim)
+
+# @double
+# def iyigunler():
+#     return "iyi gunler"
+
+# selam("Zeynep")
+# gunaydin()
+# print(iyigunler())
+
+# parametre alan decorator
+# def dec_selamlama(count):
+#     def selamlama(fn):
+#         def inner(ad):
+#             for i in range(count):
+#                 fn(ad)
+
+#         return inner
+#     return selamlama
+
+# @dec_selamlama(count=2)
+# def gunaydin(ad):
+#     print(f"Gunaydin benim adim {ad}")
+
+# @dec_selamlama(count=3)
+# def iyigunler(ad):
+#     print(f"Iyi gunler benim adim {ad}")
+
+# gunaydin("Zeynep")
+# iyigunler("Zeynep")
+
+# ---
+
+import time
+
+def dec_speedtest(count):
+    def speed_test(fn):
+        def inner(*args, **kwargs):
+            start_time = time.perf_counter()
+            print(f"{fn.__name__} metodu calisiyor")  
+            for i in range(count):    
+                result = fn(*args, **kwargs)
+                end_time = time.perf_counter()      
+                run_time = end_time - start_time
+                print(f"gecen sure: {run_time}")   
+            return result
+        return inner
+    return speed_test
+
+@dec_speedtest(count = 1)
+def sum_gen():
+    return sum((x for x in range(100000000)))
+
+@dec_speedtest(count = 2)
+def sum_list():
+    return sum([x for x in range(100000000)])
+
+print(sum_gen())
+print(sum_list())
+
+
