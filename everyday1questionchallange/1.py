@@ -171,8 +171,34 @@
 # print(b.writer, b.name, b.page, b.get_id())
 
 # * Day 19: Animal → Dog inheritance yapısını kur.
+# class Animal:
+#     def __init__(self, name, breed, age):
+#         self.name = name
+#         self.breed = breed
+#         self.age = age
+        
+# class Dog(Animal):
+#     pass
+
+# d = Dog("Gofret", "Dog", 3)
+# print(f"{d.name} {d.breed} {d.age}")
+
 
 # * Day 20: Animal içinde speak(), Dog içinde override edilmiş speak() yaz.
+class Animal:
+    def __init__(self, name, breed, age):
+        self.name = name
+        self.breed = breed
+        self.age = age
+    def speak(self):
+        return "sound"
+        
+class Dog(Animal):
+    def speak(self):
+        return "hav hav"
+
+d = Dog("Gofret", "Dog", 3)
+print(f"{d.name} {d.breed} {d.age} {d.speak()}")
 
 # * Day 21: BankAccount class’ı oluştur: deposit() ve withdraw() ekle.
 
