@@ -185,22 +185,39 @@
 
 
 # * Day 20: Animal içinde speak(), Dog içinde override edilmiş speak() yaz.
-class Animal:
-    def __init__(self, name, breed, age):
-        self.name = name
-        self.breed = breed
-        self.age = age
-    def speak(self):
-        return "sound"
+# class Animal:
+#     def __init__(self, name, breed, age):
+#         self.name = name
+#         self.breed = breed
+#         self.age = age
+#     def speak(self):
+#         return "sound"
         
-class Dog(Animal):
-    def speak(self):
-        return "hav hav"
+# class Dog(Animal):
+#     def speak(self):
+#         return "hav hav"
 
-d = Dog("Gofret", "Dog", 3)
-print(f"{d.name} {d.breed} {d.age} {d.speak()}")
+# d = Dog("Gofret", "Dog", 3)
+# print(f"{d.name} {d.breed} {d.age} {d.speak()}")
 
 # * Day 21: BankAccount class’ı oluştur: deposit() ve withdraw() ekle.
+# class BankAccount:
+#     def __init__(self, balance):
+#         self.balance = balance
+#     def deposit(self):
+#         amount = input("Write a amount to deposit: ")
+#         amount = int(amount)
+#         self.balance += amount
+#         print(f"{amount} added. Balance: {self.balance}")
+#     def withdraw(self):
+#         amount = input("Write a amount to withdraw: ")
+#         amount = int(amount)
+#         self.balance -= amount
+#         print(f"{amount} remowed. Balance: {self.balance}")
+
+# acc = BankAccount(1000)
+# acc.deposit()
+# acc.withdraw()
 
 # 5. Iterators & Generators — 4 gün
 
