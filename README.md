@@ -61,6 +61,16 @@ BTK Akademinin ileri seviye Python eğitiminde izlenen konular, örnekler ve pra
 | [decoratorFonksiyonlar.py](decoratorFonksiyonlar.py) | Decorator mantığı, parametreli decorator ve performans ölçüm örnekleri |
 | [decorator_uygulama.py](decorator_uygulama.py) | Speed test decorator uygulaması |
 
+### 8. Regex ve CSV dosya işlemleri
+
+| Dosya | Konu |
+|---|---|
+| [RegularExpressions.py](RegularExpressions.py) | re modülü ile temel regex arama ve eşleştirme işlemleri |
+| [metaKarakterleri.py](metaKarakterleri.py) | Regex metakarakterleri, desenler ve örnek kullanım |
+| [reader.py](reader.py) | CSV dosyasından okuma ve filtreleme örneği |
+| [writer.py](writer.py) | CSV dosyasına yazma ve dönüştürme örneği |
+| [dict_reader.py](dict_reader.py) | DictReader ile sütun bazlı sorgulama ve filtreleme |
+
 ## Çalıştırma
 
 Python 3 kurulu olması yeterlidir. Ek bağımlılık gerekmez.
@@ -81,6 +91,8 @@ python3 ExpenseTrackerCLI.py/main.py
 - Iterable, iterator ve generator yapısı
 - Bellek verimliliği ve çıktının karşılaştırılması
 - İleri düzey fonksiyonlar ve decorator kullanımı
+- Regex desenleri ve metakarakterleri
+- CSV okuma/yazma ve DictReader ile veri filtreleme
 - Kendi mini uygulama ve CLI tasarımı
 
 ## Not

@@ -1,3 +1,10 @@
+# ============================================================
+# META KARAKTERLER (REGEX METACHARACTERS)
+# Regex içinde özel anlamı olan karakterler ile desen oluşturmaya
+# yarar. Örneğin rakam, tekrar, aralık, istediğimiz kelime gibi
+# patternler tanımlanabilir.
+# ============================================================
+
 #META KARAKTERLER#
 
 # import re

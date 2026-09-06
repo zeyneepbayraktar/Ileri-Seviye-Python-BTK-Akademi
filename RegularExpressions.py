@@ -1,3 +1,9 @@
+# ============================================================
+# REGULAR EXPRESSIONS (REGEX)
+# Metin içinde belirli desenleri aramak, eşleştirmek ve bulmak
+# için re (regular expressions) modülü kullanılır.
+# ============================================================
+
 import re
 
 text = "BTK Akademi Ileri Seviye Python BTK"
