@@ -222,6 +222,12 @@
 # 5. Iterators & Generators — 4 gün
 
 # * Day 22: Bir listenin iterator’ını oluştur ve next() kullan.
+
+sayilar = [1, 2, 3, 4, 5]
+iterator = iter(sayilar)
+for i in sayilar:
+    print(next(iterator))
+
 # * Day 23: Kendi iterator class’ını oluşturmayı dene.
 # * Day 24: 1–10 arasında sayı üreten generator yaz.
 # * Day 25: Sonsuz şekilde sıradaki sayıyı üreten generator yaz.
