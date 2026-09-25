@@ -1,8 +1,11 @@
 {
-    "id":1,
-    "title":"Macbook Pro",
-    "price":90000,
-    "rating":"4.5",
-    "category":"Bilgisayar",
-    "colors":["Red", "Blue"]
+  "id": 1,
+  "title": "Macbook Pro",
+  "price": 90000,
+  "rating": "4.5",
+  "category": "Bilgisayar",
+  "colors": [
+    "Red",
+    "Blue"
+  ]
 }

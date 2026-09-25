@@ -256,14 +256,14 @@
 
 # * Day 24: 1–10 arasında sayı üreten generator yaz.
 
-def sayi_olusturma():
-    sayi = 1
-    while sayi < 11:
-        yield sayi
-        sayi +=1
+# def sayi_olusturma():
+#     sayi = 1
+#     while sayi < 11:
+#         yield sayi
+#         sayi +=1
 
-sonuc = list(sayi_olusturma())
-print(sonuc)
+# sonuc = list(sayi_olusturma())
+# print(sonuc)
 
 # * Day 25: Sonsuz şekilde sıradaki sayıyı üreten generator yaz.
 
