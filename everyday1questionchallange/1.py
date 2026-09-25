@@ -223,12 +223,37 @@
 
 # * Day 22: Bir listenin iterator’ını oluştur ve next() kullan.
 
-sayilar = [1, 2, 3, 4, 5]
-iterator = iter(sayilar)
-for i in sayilar:
-    print(next(iterator))
+# sayilar = [1, 2, 3, 4, 5]
+# iterator = iter(sayilar)
+# for i in sayilar:
+#     print(next(iterator))
 
 # * Day 23: Kendi iterator class’ını oluşturmayı dene.
+# class Mynumber:
+#     def __init__(self, start, stop):
+#         self.start = start
+#         self.stop = stop
+
+#     def __iter__(self):
+#         return self
+    
+#     def __next__(self):
+#         if self.start <= self.stop:
+#             x = self.start
+#             self.start += 1
+#             return x
+#         else:
+#             raise StopIteration
+
+# iterator = iter(Mynumber(20,30))
+# # print(next(iterator))
+
+# while True:
+#     try:
+#         print(next(iterator))
+#     except StopIteration:
+#         break
+
 # * Day 24: 1–10 arasında sayı üreten generator yaz.
 # * Day 25: Sonsuz şekilde sıradaki sayıyı üreten generator yaz.
 
