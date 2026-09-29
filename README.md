@@ -70,6 +70,21 @@ BTK Akademinin ileri seviye Python eğitiminde izlenen konular, örnekler ve pra
 | [reader.py](reader.py) | CSV dosyasından okuma ve filtreleme örneği |
 | [writer.py](writer.py) | CSV dosyasına yazma ve dönüştürme örneği |
 | [dict_reader.py](dict_reader.py) | DictReader ile sütun bazlı sorgulama ve filtreleme |
+| [dict_writer.py](dict_writer.py) | DictWriter ile sözlük verilerini CSV dosyasına yazma |
+| [csv_uygulama/uyg.py](csv_uygulama/uyg.py) | CSV verileriyle uygulama örneği |
+
+### 9. JSON dosya işlemleri
+
+| Dosya | Konu |
+|---|---|
+| [json_dict.py](json_dict.py) | JSON içinde sözlük verilerini okuma, güncelleme ve yazma |
+| [json_lists.py](json_lists.py) | JSON listelerini okuma ve yeni kayıt ekleme |
+| [json_multiple.py](json_multiple.py) | Birden fazla veri grubunu JSON içinde yönetme |
+| [serialize_json.py](serialize_json.py) | Python verilerini JSON formatına dönüştürme (serialize) |
+| [deserialize_json.py](deserialize_json.py) | JSON verilerini Python nesnelerine dönüştürme (deserialize) |
+| [products.json](products.json) | Ürün listesini içeren JSON veri dosyası |
+| [product.json](product.json) | Ürün bilgilerini içeren JSON veri dosyası |
+| [db.json](db.json) | Kullanıcı ve ürün verilerini içeren JSON veri dosyası |
 
 ## Çalıştırma
 
@@ -93,6 +108,9 @@ python3 ExpenseTrackerCLI.py/main.py
 - İleri düzey fonksiyonlar ve decorator kullanımı
 - Regex desenleri ve metakarakterleri
 - CSV okuma/yazma ve DictReader ile veri filtreleme
+- DictWriter ile sözlük verilerini CSV formatında kaydetme
+- JSON okuma, yazma ve veri güncelleme
+- Serialize ve deserialize işlemleri
 - Kendi mini uygulama ve CLI tasarımı
 
 ## Not

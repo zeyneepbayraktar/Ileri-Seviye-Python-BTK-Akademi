@@ -27,4 +27,21 @@ with open("products.json", "w", encoding = "utf-8") as file:
     json.dump(products, file, ensure_ascii=False, indent=2)
 
 
-
+# product json icerigi:
+# [
+#   {
+#     "id": 1,
+#     "title": "Macbook Pro",
+#     "price": 90000
+#   },
+#   {
+#     "id": 1,
+#     "title": "Macbook Pro",
+#     "price": 70000
+#   },
+#   {
+#     "id": 3,
+#     "title": "Phone",
+#     "price": 40000
+#   }
+# ]
