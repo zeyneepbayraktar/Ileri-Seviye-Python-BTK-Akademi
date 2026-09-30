@@ -86,11 +86,23 @@ BTK Akademinin ileri seviye Python eğitiminde izlenen konular, örnekler ve pra
 | [product.json](product.json) | Ürün bilgilerini içeren JSON veri dosyası |
 | [db.json](db.json) | Kullanıcı ve ürün verilerini içeren JSON veri dosyası |
 
+### 10. HTTP istekleri (requests)
+
+| Dosya | Konu |
+|---|---|
+| [get-request.py](get-request.py) | GET isteği ile API’den veri çekme, status code, headers ve response içeriği analizi |
+| [get-query.py](get-query.py) | Query string parametreleriyle filtreleme işlemi |
+| [post-request.py](post-request.py) | POST isteği ile yeni veri gönderme ve JSON yanıtını yorumlama |
+
 ## Çalıştırma
 
-Python 3 kurulu olması yeterlidir. Ek bağımlılık gerekmez.
+Python 3 kurulu olması yeterlidir. HTTP örnekleri için `requests` kütüphanesini kurmanız gerekir.
 
 ```bash
+python3 -m pip install requests
+python3 get-request.py
+python3 get-query.py
+python3 post-request.py
 python3 listcomprehension.py
 python3 lambdafonksiyonu.py
 python3 shoppingCart.py
@@ -111,6 +123,9 @@ python3 ExpenseTrackerCLI.py/main.py
 - DictWriter ile sözlük verilerini CSV formatında kaydetme
 - JSON okuma, yazma ve veri güncelleme
 - Serialize ve deserialize işlemleri
+- HTTP GET / POST istekleri ve requests kütüphanesi kullanımı
+- Query string parametreleri ile filtreleme
+- response.status_code, headers ve json() yapısı
 - Kendi mini uygulama ve CLI tasarımı
 
 ## Not
